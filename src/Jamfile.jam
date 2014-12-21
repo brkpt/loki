@@ -1,0 +1,16 @@
+SubDir LOKI src ;
+
+LOKI_SRCS = 
+	LevelMutex.cpp
+	OrderedStatic.cpp
+	SafeFormat.cpp
+	Singleton.cpp
+	SmallObj.cpp
+	SmartPtr.cpp
+	StrongPtr.cpp
+	;
+
+C.IncludeDirectories Loki : $(LOKI)/include ;
+C.OutputPath Loki : $(LOKI)/lib ;
+C.Library Loki : $(LOKI_SRCS) ;
+

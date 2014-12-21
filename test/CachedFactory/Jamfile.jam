@@ -1,0 +1,7 @@
+SubDir LOKI test CachedFactory ;
+
+C.IncludeDirectories CachedFactoryTest : $(LOKI)/include ;
+C.LinkLibraries CachedFactoryTest : Loki ;
+C.Application CachedFactoryTest : CachedFactoryTest.cpp ;
+
+

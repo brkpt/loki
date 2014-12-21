@@ -1,0 +1,4 @@
+SubDir LOKI test ;
+
+SubInclude LOKI test CachedFactory ;
+
