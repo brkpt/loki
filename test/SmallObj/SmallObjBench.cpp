@@ -16,7 +16,13 @@
 
 // ----------------------------------------------------------------------------
 
+// ----------------------------------------------------------------------------
+// From SmallObj.h
+// Don't define LOKI_SMALL_OBJECT_USE_NEW_ARRAY when using a Microsoft compiler to prevent memory leaks.
+// ----------------------------------------------------------------------------
+#if !defined(_MSC_VER)
 #define LOKI_SMALL_OBJECT_USE_NEW_ARRAY
+#endif
 
 #ifndef LOKI_CLASS_LEVEL_THREADING
 #define LOKI_CLASS_LEVEL_THREADING
