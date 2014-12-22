@@ -1,0 +1,7 @@
+SubDir LOKI test ScopeGuard ;
+
+C.IncludeDirectories ScopeGuardTest : $(LOKI)/include ;
+C.LinkLibraries ScopeGuardTest : Loki ;
+C.Application ScopeGuardTest : main.cpp ;
+
+

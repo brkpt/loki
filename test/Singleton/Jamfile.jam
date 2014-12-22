@@ -1,0 +1,11 @@
+SubDir LOKI test Singleton ;
+
+C.IncludeDirectories DependenciesTest : $(LOKI)/include ;
+C.LinkLibraries DependenciesTest : Loki ;
+C.Application DependenciesTest : Dependencies.cpp ;
+
+C.IncludeDirectories PhoenixTest : $(LOKI)/include ;
+C.LinkLibraries PhoenixTest : Loki ;
+C.Application PhoenixTest : Phoenix.cpp ;
+
+

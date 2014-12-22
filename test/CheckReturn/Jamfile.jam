@@ -1,0 +1,7 @@
+SubDir LOKI test CheckReturn ;
+
+C.IncludeDirectories CheckReturnTest : $(LOKI)/include ;
+C.LinkLibraries CheckReturnTest : Loki ;
+C.Application CheckReturnTest : main.cpp ;
+
+

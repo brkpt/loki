@@ -1,0 +1,11 @@
+SubDir LOKI test SmallObj ;
+
+C.IncludeDirectories SmallObjBench : $(LOKI)/include ;
+C.LinkLibraries SmallObjBench : Loki ;
+C.Application SmallObjBench : SmallObjBench.cpp ;
+
+
+C.IncludeDirectories SmallObjSingleton : $(LOKI)/include ;
+C.LinkLibraries SmallObjSingleton : Loki ;
+C.Application SmallObjSingleton : SmallObjSingleton.cpp ;
+

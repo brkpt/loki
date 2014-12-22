@@ -1,0 +1,7 @@
+SubDir LOKI test SafeFormat ;
+
+C.IncludeDirectories SafeFormatTest : $(LOKI)/include ;
+C.LinkLibraries SafeFormatTest : Loki ;
+C.Application SafeFormatTest : main.cpp ;
+
+

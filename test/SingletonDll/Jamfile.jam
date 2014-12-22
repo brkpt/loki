@@ -1,0 +1,14 @@
+SubDir LOKI test SingletonDLL ;
+
+C.IncludeDirectories Foo : $(LOKI)/include ;
+C.OutputPath Foo : $(LOKI)/test/SingletonDLL ;
+C.Library Foo : foo.cpp : shared ;
+
+C.IncludeDirectories Singleton : $(LOKI)/include ;
+C.OutputPath Singleton : $(LOKI)/test/SingletonDLL ;
+C.Library Singleton : Singletondll.cpp : shared ; 
+
+C.IncludeDirectories : Client : $(LOKI)/include ;
+C.LinkLibraries Client : Singleton Foo ;
+C.Application Client : client.cpp ;
+

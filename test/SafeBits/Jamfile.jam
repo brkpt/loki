@@ -1,0 +1,7 @@
+SubDir LOKI test SafeBits ;
+
+C.IncludeDirectories SafeBitsTest : $(LOKI)/include ;
+C.LinkLibraries SafeBitsTest : Loki ;
+C.Application SafeBitsTest : SafeBitTest.cpp ;
+
+

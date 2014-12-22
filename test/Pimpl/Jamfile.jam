@@ -1,0 +1,7 @@
+SubDir LOKI test PImpl ;
+
+C.IncludeDirectories PImplTest : $(LOKI)/include ;
+C.LinkLibraries PImplTest : Loki ;
+C.Application PImplTest : main.cpp ;
+
+

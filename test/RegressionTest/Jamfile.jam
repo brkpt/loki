@@ -1,0 +1,7 @@
+SubDir LOKI test RegressionTest ;
+
+C.IncludeDirectories RegressionTest : $(LOKI)/include ;
+C.LinkLibraries RegressionTest : Loki ;
+C.Application RegressionTest : Test.cpp ;
+
+

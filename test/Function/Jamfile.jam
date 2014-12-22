@@ -1,0 +1,7 @@
+SubDir LOKI test Function ;
+
+C.IncludeDirectories FunctionTest : $(LOKI)/include ;
+C.LinkLibraries FunctionTest : Loki ;
+C.Application FunctionTest : FunctionTest.cpp ;
+
+

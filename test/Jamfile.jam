@@ -1,4 +1,53 @@
 SubDir LOKI test ;
 
 SubInclude LOKI test CachedFactory ;
+SubInclude LOKI test Checker ;
+SubInclude LOKI test CheckReturn ;
+SubInclude LOKI test DeletableSingleton ;
+SubInclude LOKI test Factory ;
+SubInclude LOKI test flex_string ;
+SubInclude LOKI test Function ;
+SubInclude LOKI test LevelMutex ;
+SubInclude LOKI test LockingPtr ;
+SubInclude LOKI test Longevity ;
+SubInclude LOKI test OrderedStatic ;
+SubInclude LOKI test Pimpl ;
+SubInclude LOKI test Register ;
+SubInclude LOKI test RegressionTest ;
+SubInclude LOKI test SafeBits ;
+SubInclude LOKI test SafeFormat ;
+SubInclude LOKI test ScopeGuard ;
+SubInclude LOKI test Singleton ;
+SubInclude LOKI test SingletonDLL ;
+SubInclude LOKI test SmallObj ;
+SubInclude LOKI test SmartPtr ;
+
+Workspace Test : 
+	CachedFactoryTest 
+	CheckerTest 
+	CheckReturnTest 
+	DeletableSingletonTest 
+	FactoryTest 
+	Flex_String_Test
+	FunctionTest
+	LevelMutexTest
+	LockingPtrTest
+	LongevityTest LongevityTest2
+	OrderedStaticTest
+	PImplTest
+	RegisterTestFoo
+	RegisterTest
+	RegressionTest
+	SafeBitsTest
+	SafeFormatTest
+	ScopeGuardTest
+	DependenciesTest
+	PhoenixTest
+	Foo
+	Singleton
+	Client
+	SmallObjBench
+	SmallObjSingleton
+	SmartPtrTest
+	;
 

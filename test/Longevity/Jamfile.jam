@@ -1,0 +1,10 @@
+SubDir LOKI test Longevity ;
+
+C.IncludeDirectories LongevityTest : $(LOKI)/include ;
+C.LinkLibraries LongevityTest : Loki ;
+C.Application LongevityTest : main.cpp ;
+
+C.IncludeDirectories LongevityTest2 : $(LOKI)/include ;
+C.LinkLibraries LongevityTest2 : Loki ;
+C.Application LongevityTest2 : main2.cpp ;
+

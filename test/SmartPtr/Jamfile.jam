@@ -1,0 +1,7 @@
+SubDir LOKI test SmartPtr ;
+
+C.IncludeDirectories SmartPtrTest : $(LOKI)/include ;
+C.LinkLibraries SmartPtrTest : Loki ;
+C.Application SmartPtrTest : main.cpp strong.cpp LockTest.cpp ;
+
+

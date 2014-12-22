@@ -1,0 +1,7 @@
+SubDir LOKI test Checker ;
+
+C.IncludeDirectories CheckerTest : $(LOKI)/include ;
+C.LinkLibraries CheckerTest : Loki ;
+C.Application CheckerTest : main.cpp ;
+
+

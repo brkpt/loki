@@ -1,0 +1,7 @@
+SubDir LOKI test OrderedStatic ;
+
+C.IncludeDirectories OrderedStaticTest : $(LOKI)/include ;
+C.LinkLibraries OrderedStaticTest : Loki ;
+C.Application OrderedStaticTest : main.cpp ;
+
+

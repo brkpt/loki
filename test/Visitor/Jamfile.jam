@@ -1,0 +1,7 @@
+SubDir LOKI test Visitor ;
+
+C.IncludeDirectories VisitorTest : $(LOKI)/include ;
+C.LinkLibraries VisitorTest : Loki ;
+C.Application VisitorTest : main.cpp ;
+
+
