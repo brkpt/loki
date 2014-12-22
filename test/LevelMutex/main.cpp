@@ -20,7 +20,7 @@
 // ----------------------------------------------------------------------------
 
 
-#include "LevelMutex.h"
+#include "loki/LevelMutex.h"
 
 #include "MultiThreadTests.hpp"
 #include "Thing.hpp"

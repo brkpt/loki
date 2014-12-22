@@ -26,7 +26,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#include <SafeFormat.h>
+#include <loki/SafeFormat.h>
 
 #include "ThreadPool.hpp"
 #include "Thing.hpp"
