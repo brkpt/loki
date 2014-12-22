@@ -754,7 +754,7 @@ static void test_exception()
         f(5, 4);
         BOOST_CHECK(false);
     }
-    catch(bad_function_call)
+    catch(std::bad_function_call)
     {
         // okay
     }
