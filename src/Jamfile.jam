@@ -10,7 +10,68 @@ LOKI_SRCS =
 	StrongPtr.cpp
 	;
 
+LOKI_INC =
+	AbstractFactory.h
+	Allocator.h
+	AssocVector.h
+	CachedFactory.h
+	Checker.h
+	CheckReturn.h
+	ConstPolicy.h
+	DataGenerators.h
+	EmptyType.h
+	Factory.h
+	flex/allocatorstringstorage.h
+	flex/cowstringopt.h
+	flex/flex_string.h
+	flex/flex_string_details.h
+	flex/flex_string_shell.h
+	flex/simplestringstorage.h
+	flex/smallstringopt.h
+	flex/vectorstringstorage.h
+	Function.h
+	Functor.h
+	HierarchyGenerators.h
+	Key.h
+	LevelMutex.h
+	LockingPtr.h
+	LokiExport.h
+	LokiTypeInfo.h
+	MultiMethods.h
+	NullType.h
+	OrderedStatic.h
+	Pimpl.h
+	RefToValue.h
+	Register.h
+	SafeBits.h
+	SafeFormat.h
+	ScopeGuard.h
+	Sequence.h
+	Singleton.h
+	SmallObj.h
+	SmartPtr.h
+	SPCachedFactory.h
+	static_check.h
+	StrongPtr.h
+	Threads.h
+	Tuple.h
+	Typelist.h
+	TypelistMacros.h
+	TypeManip.h
+	TypeTraits.h
+	Visitor.h
+	yasli/platform.h
+	yasli/random.h
+	yasli/yasli_fill_iterator.h
+	yasli/yasli_memory.h
+	yasli/yasli_protocols.h
+	yasli/yasli_traits.h
+	yasli/yasli_vector.h
+	;
+
+SEARCH on $(LOKI_INC) = $(LOKI)/include/loki ;
+
 C.IncludeDirectories Loki : $(LOKI)/include ;
 C.OutputPath Loki : $(LOKI)/lib ;
-C.Library Loki : $(LOKI_SRCS) ;
+C.Library Loki : $(LOKI_SRCS) $(LOKI_INC) ;
 
