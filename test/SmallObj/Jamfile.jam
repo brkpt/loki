@@ -2,7 +2,7 @@ SubDir LOKI test SmallObj ;
 
 C.IncludeDirectories SmallObjBench : $(LOKI)/include ;
 C.LinkLibraries SmallObjBench : Loki ;
-C.Application SmallObjBench : SmallObjBench.cpp ;
+C.Application SmallObjBench : SmallObjBench.cpp timer.h ;
 
 
 C.IncludeDirectories SmallObjSingleton : $(LOKI)/include ;

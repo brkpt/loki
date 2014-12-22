@@ -2,6 +2,7 @@ SubDir LOKI test Factory ;
 
 C.IncludeDirectories FactoryTest : $(LOKI)/include ;
 C.LinkLibraries FactoryTest : Loki ;
+C.OutputPath FactoryTest : $(LOKI)/test/bin ;
 C.Application FactoryTest : Factory.cpp ;
 
 

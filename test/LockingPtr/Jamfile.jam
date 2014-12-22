@@ -2,6 +2,7 @@ SubDir LOKI test LockingPtr ;
 
 C.IncludeDirectories LockingPtrTest : $(LOKI)/include ;
 C.LinkLibraries LockingPtrTest : Loki ;
-C.Application LockingPtrTest : main.cpp ;
+C.OutputPath LockingPtrTest : $(LOKI)/test/bin ;
+C.Application LockingPtrTest : main.cpp Thread.h ;
 
 

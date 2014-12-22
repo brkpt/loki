@@ -2,9 +2,11 @@ SubDir LOKI test Longevity ;
 
 C.IncludeDirectories LongevityTest : $(LOKI)/include ;
 C.LinkLibraries LongevityTest : Loki ;
+C.OutputPath LongevityTest : $(LOKI)/test/bin ;
 C.Application LongevityTest : main.cpp ;
 
 C.IncludeDirectories LongevityTest2 : $(LOKI)/include ;
 C.LinkLibraries LongevityTest2 : Loki ;
+C.OutputPath LongevityTest2 : $(LOKI)/test/bin ;
 C.Application LongevityTest2 : main2.cpp ;
 

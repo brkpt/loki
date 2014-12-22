@@ -1,17 +1,14 @@
 SubDir LOKI test SingletonDLL ;
 
-C.IncludeDirectories Foo : $(LOKI)/include ;
-C.OutputPath Foo : $(LOKI)/test/SingletonDLL ;
+C.IncludeDirectories Foo Singleton Client : $(LOKI)/include ;
+C.OutputPath Foo Singleton Client : $(LOKI)/test/bin ;
 C.Defines Foo : FOO_MAKE_DLL ;
 C.Library Foo : foo.cpp foo.h foo_export.h : shared ;
 
-C.IncludeDirectories Singleton : $(LOKI)/include ;
-C.LinkLibraries Singleton : Foo ;
 C.Defines Singleton : SINGLETONDLL_MAKE_DLL ;
-C.OutputPath Singleton : $(LOKI)/test/SingletonDLL ;
+C.LinkLibraries Singleton : Foo ;
 C.Library Singleton : Singletondll.cpp Singletondll.h singletondll_export.h : shared ; 
 
-C.IncludeDirectories Client : $(LOKI)/include ;
 C.LinkLibraries Client : Singleton Foo ;
 C.Application Client : client.cpp ;
 

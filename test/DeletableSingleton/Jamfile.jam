@@ -2,6 +2,7 @@ SubDir LOKI test DeletableSingleton ;
 
 C.IncludeDirectories DeletableSingletonTest : $(LOKI)/include ;
 C.LinkLibraries DeletableSingletonTest : Loki ;
+C.OutputPath DeletableSingletonTest : $(LOKI)/test/bin ;
 C.Application DeletableSingletonTest : DeletableSingleton.cpp ;
 
 

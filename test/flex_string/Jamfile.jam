@@ -2,6 +2,6 @@ SubDir LOKI test Flex_String ;
 
 C.IncludeDirectories Flex_String_Test : $(LOKI)/include ;
 C.LinkLibraries Flex_String_Test : Loki ;
+C.OutputPath Flex_String_Test : $(LOKI)/test/bin ;
 C.Application Flex_String_Test : main.cpp ;
-
 

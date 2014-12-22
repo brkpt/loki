@@ -2,6 +2,7 @@ SubDir LOKI test LevelMutex ;
 
 C.IncludeDirectories LevelMutexTest : $(LOKI)/include ;
 C.LinkLibraries LevelMutexTest : Loki ;
+C.OutputPath LevelMutexTest : $(LOKI)/test/bin ;
 C.Application LevelMutexTest : main.cpp MultiThreadTests.cpp Thing.cpp ThreadPool.cpp ;
 
 

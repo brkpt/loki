@@ -2,6 +2,4 @@ SubDir LOKI test RegressionTest ;
 
 C.IncludeDirectories RegressionTest : $(LOKI)/include ;
 C.LinkLibraries RegressionTest : Loki ;
-C.Application RegressionTest : Test.cpp ;
-
-
+C.Application RegressionTest : Test.cpp AbstractFactoryTest.h AssocVectorTest.h DataGeneratorsTest.h FactoryParmTest.h FactoryTest.h FunctorTest.h SequenceTest.h SingletonTest.h SmallObjectTest.h SmartPtrTest.h ThreadsTest.h TypelistTest.h TypeManipTest.h TypeTraitsTest.h TypeTraitsTest2.h UnitTest.h ;

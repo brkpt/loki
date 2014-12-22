@@ -2,6 +2,7 @@ SubDir LOKI test OrderedStatic ;
 
 C.IncludeDirectories OrderedStaticTest : $(LOKI)/include ;
 C.LinkLibraries OrderedStaticTest : Loki ;
+C.OutputPath OrderedStaticTest : $(LOKI)/test/bin ;
 C.Application OrderedStaticTest : main.cpp ;
 
 

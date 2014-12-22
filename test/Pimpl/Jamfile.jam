@@ -2,6 +2,7 @@ SubDir LOKI test PImpl ;
 
 C.IncludeDirectories PImplTest : $(LOKI)/include ;
 C.LinkLibraries PImplTest : Loki ;
-C.Application PImplTest : main.cpp ;
+C.OutputPath PImplTest : $(LOKI)/test/bin ;
+C.Application PImplTest : main.cpp type.h type2.h ;
 
 
