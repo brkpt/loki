@@ -1,10 +1,10 @@
 SubDir LOKI test Register ;
 
-C.IncludeDirectories RegisterFoo : $(LOKI)/include ;
+C.IncludeDirectories RegisterTestFoo : $(LOKI)/include ;
 C.Library RegisterTestFoo : foo.cpp ;
 C.OutputPath RegisterFoo : $(LOKI)/test/Register ;
 
 C.IncludeDirectories RegisterTest : $(LOKI)/include ;
-C.LinkLibraries RegisterTest : Loki RegisterFoo ;
+C.LinkLibraries RegisterTest : Loki RegisterTestFoo ;
 C.Application RegisterTest : main.cpp ;
 
