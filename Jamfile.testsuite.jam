@@ -1,5 +1,6 @@
 SubDir LOKI ;
 
 SubInclude LOKI src ;
+SubInclude LOKI test ;
 
 
